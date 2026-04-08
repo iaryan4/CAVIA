@@ -8,7 +8,7 @@ before returning them to the main loop to ensure system stability.
 from ultralytics import YOLO
 
 class ObjectDetector:
-    def __init__(self, model_version="yolo11n.pt", conf_threshold=0.5):
+    def __init__(self, model_version="yolo11x.pt", conf_threshold=0.5):
         self.model = YOLO(model_version)
         self.classes = self.model.names
         self.conf_threshold = conf_threshold
