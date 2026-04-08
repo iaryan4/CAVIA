@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # CAVIA  
-=======
-# CAVIA   
->>>>>>> c6e42e47890d56f5a1bfb2d17036555b4e6f2d22
 ### Context-Aware Vision Intelligent Agent
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
@@ -16,11 +12,7 @@ The system detects objects, understands context, and generates actions with clea
 
 ---
 
-<<<<<<< HEAD
 ## 🚀 Features
-=======
-##  Features
->>>>>>> c6e42e47890d56f5a1bfb2d17036555b4e6f2d22
 
 - **Dominant Object Selection**  
   Selects the most relevant object using priority, size, and confidence.
@@ -60,8 +52,4 @@ Camera → Detection → Dominant Object → Tracking → Memory → Decision �
 
 ```bash
 git clone https://github.com/iaryan4/CAVIA.git
-<<<<<<< HEAD
 cd CAVIA
-=======
-cd CAVIA
->>>>>>> c6e42e47890d56f5a1bfb2d17036555b4e6f2d22
