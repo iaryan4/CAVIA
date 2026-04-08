@@ -1,58 +1,55 @@
-# CAVIA
-CAVIA [ Context-Aware Vision Intelligent Agent ]
-# Context-Aware & Explainable Autonomous Agent 🤖🧠
+# CAVIA   
+### Context-Aware Vision Intelligent Agent
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-red)
 ![YOLO](https://img.shields.io/badge/YOLO-ultralytics-green)
 
-A real-time vision-based autonomous agent that goes beyond basic object detection.
+CAVIA is a real-time vision-based autonomous agent that goes beyond basic object detection.
 
-This project focuses on building a **perception → decision pipeline** similar to what is used in robotics systems.  
-It detects objects, understands context, and generates actions with clear explanations.
+It is designed as a **perception → decision pipeline** inspired by robotics systems.  
+The system detects objects, understands context, and generates actions with clear explanations.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Dominant Object Selection**  
-  Selects a single important object using priority, size, and confidence to avoid conflicting actions.
+  Selects the most relevant object using priority, size, and confidence.
 
 - **Temporal Smoothing (EMA)**  
-  Reduces jitter in object position using exponential moving average.
+  Reduces jitter in object tracking.
 
 - **Memory Module (LOST State)**  
-  Remembers objects for a short time when they disappear and tries to recover them.
+  Handles temporary occlusions using last known position.
 
 - **State Machine**  
-  Handles behavior using defined states:
   `SEARCHING`, `TRACKING`, `APPROACHING`, `AVOIDING`, `LOST`, `TARGET_LOCKED`
 
 - **Explainable AI (XAI)**  
-  Displays system state, action, and reasoning directly on the video feed.
+  Displays system state, action, and reasoning in real-time.
 
 ---
 
 ## 🧠 How It Works
 
-Camera Input → Object Detection → Dominant Object Selection →  
-Tracking & Memory → Decision Engine → Action + Explanation
+Camera → Detection → Dominant Object → Tracking → Memory → Decision → Action
 
 ---
 
 ## 📂 Project Structure
 
-- `main.py` → Main loop (connects all modules)
-- `detector.py` → YOLO detection + filtering
-- `decision.py` → Decision logic + state mapping
-- `tracker.py` → Smoothing (EMA)
-- `memory.py` → Memory + LOST handling
-- `utils.py` → UI overlay + FPS
+- `main.py` → Main control loop  
+- `detector.py` → YOLO detection  
+- `decision.py` → Decision engine  
+- `tracker.py` → Smoothing  
+- `memory.py` → Memory handling  
+- `utils.py` → UI + FPS  
 
 ---
 
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/context-aware-agent.git
-cd context-aware-agent
+git clone https://github.com/iaryan4/CAVIA.git
+cd CAVIA
